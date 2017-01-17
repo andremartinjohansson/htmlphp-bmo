@@ -1,0 +1,403 @@
+/* Import fonts */
+
+@import 'https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911';
+
+/* General */
+
+html {
+    font-family: 'Goudy Bookletter 1911', serif;
+    overflow-y: scroll;
+    background-color: lightgray;
+}
+body {
+    margin: auto;
+    background-color: #E9E9E9;
+    width: 980px;
+    box-shadow: 0 0 10px;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #3e5f66;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+.about, .maggy, .article, .object, .search, .gallery, .admin {
+    padding: 20px;
+}
+
+/* Header */
+
+.site-header {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+/* Main nav */
+
+.site-nav {
+    padding: 2px;
+    background-color: gray;
+}
+.site-nav li {
+    display: inline;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.site-nav a:link,
+.site-nav a:visited {
+    text-decoration: none;
+    color: black;
+    padding: 19px;
+}
+.site-nav a:hover {
+    color: #E9E9E9;
+}
+.site-nav .selected a:link,
+.site-nav .selected a:visited {
+    color: #E9E9E9;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Index */
+
+main {
+    min-height: 46em;
+    padding: 10px;
+}
+.index {
+    text-align: center;
+}
+.index p {
+    font-size: 18px;
+}
+
+/* About */
+
+.me-info {
+    width: 215px;
+    padding: 10px;
+    border: 1px solid gray;
+    overflow: auto;
+    border-radius: 6px;
+    background-color: lightgray;
+}
+.me {
+    width: 50px;
+    float: left;
+}
+.me-name {
+    font-weight: bold;
+    float: right;
+}
+.me-email {
+    font-weight: bold;
+    float: right;
+}
+
+/* Maggy */
+
+.funeral {
+    text-align: center;
+}
+.horse {
+    text-align: center;
+}
+.vehicles img {
+    width: 400px;
+    height: 250px;
+    display: inline-block;
+    padding: 10px;
+}
+.vehicles {
+    text-align: center;
+}
+.workers {
+    text-align: center;
+}
+.workers img {
+    border: 2px solid lightgray;
+}
+.ad {
+    text-align: center;
+}
+.ad img {
+    max-width: 300px;
+    padding: 10px;
+}
+.sign {
+    text-align: center;
+}
+.sign img {
+    max-width: 300px;
+    padding: 10px;
+}
+.tavlor img {
+    max-width: 200px;
+    height: 250px;
+}
+.tavlor {
+    text-align: center;
+}
+.drink {
+    text-align: center;
+}
+.obituary {
+    text-align: center;
+}
+.obituary img {
+    max-height: 350px;
+}
+.funeral-clothes {
+    text-align: center;
+}
+.clothes {
+    text-align: center;
+}
+.clothes img {
+    max-height: 400px;
+}
+
+/* Articles */
+
+.article-item {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: lightgray;
+}
+.article-info {
+    float: right;
+}
+.article-info span {
+    float: right;
+}
+.article-back-link {
+    margin-bottom: 50px;
+}
+.article {
+    font-size: 18px;
+}
+.related {
+    border-top: 1px solid gray;
+}
+.related-item {
+    display: inline;
+    padding: 10px;
+}
+.related-item img {
+    border: 2px solid gray;
+}
+
+/* Objects */
+
+.object-item {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: lightgray;
+    overflow: auto;
+}
+.object-item img {
+    float: left;
+    margin-right: 10px;
+}
+
+.cat-dropdown {
+    display: block;
+    margin: 10px;
+    font-size: 16px;
+}
+.cat-dropdown select {
+    padding: 3px;
+    background-color: #E9E9E9;
+    border-radius: 6px;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.object-navigation {
+    text-align: center;
+    background-color: lightgray;
+    padding: 15px;
+    margin: -20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+}
+.object-navigation span {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.object-navigation a {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightgray;
+}
+.object-navigation .disabled {
+    cursor: default;
+    color: gray;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+/* Gallery */
+
+.gallery-navigation .disabled {
+    cursor: default;
+    color: gray;
+    text-decoration: none;
+    visibility: hidden;
+}
+.gallery-item {
+    display: inline;
+}
+.gallery-item img {
+    border: 2px solid gray;
+}
+.gallery-section {
+    text-align: center;
+}
+
+.gallery-navigation {
+    text-align: center;
+    background-color: lightgray;
+    padding: 15px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.gallery-navigation span {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.gallery-navigation a {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightgray;
+}
+
+/* Search */
+
+.search input[type=search] {
+    height: 35px;
+    width: 500px;
+    font-size: 26px;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+.search input[type=submit] {
+    height: 35px;
+    width: 45px;
+    padding: 5px;
+    margin-left: 10px;
+    border-image: none;
+    font-family: 'Goudy Bookletter 1911', serif;
+    position: absolute;
+}
+
+/* Admin */
+
+.admin-link {
+    float: right;
+}
+
+.admin input[type=text],
+.admin input[type=password] {
+    height: auto;
+    font-size: 14px;
+    border-width: 0;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+.admin button[type=submit] {
+    margin-left: 10px;
+    border-image: none;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.logout {
+    float: right;
+    font-size: 18px;
+}
+
+.admin-main-nav {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 18px;
+}
+.admin-main-nav li {
+    list-style: none;
+    padding: 5px;
+}
+.admin-main-nav a {
+    display: block;
+    padding: 20px;
+    border: 2px solid gray;
+    width: 300px;
+}
+.admin-main-nav a:hover {
+    background-color: lightgray;
+    text-decoration: none;
+}
+.active {
+    background-color: lightgray;
+}
+
+.admin .update-form input {
+    height: auto;
+    width: 250px;
+    font-size: 14px;
+    border-width: 0;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.admin-nav {
+    text-align: center;
+    font-size: 18px;
+    padding: 2px;
+    margin: -20px;
+    margin-bottom: 30px;
+    background-color: lightgray;
+    border-bottom: 1px solid gray;
+}
+.admin-nav li {
+    list-style: none;
+    display: inline;
+    padding: 5px;
+}
+.admin-nav a {
+    padding: 5px;
+}
+.admin-nav a:hover {
+    text-decoration: none;
+    color: black;
+}
+.admin-nav .active-a {
+    background-color: lightgray;
+    color: black;
+    text-decoration: underline;
+}
+.create-choice {
+    padding: 10px;
+    font-size: 18px;
+    display: block;
+}
